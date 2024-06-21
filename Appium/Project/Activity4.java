@@ -108,6 +108,10 @@ public class Activity4 {
         System.out.println(No_of_task_now.size());
         Assert.assertEquals(No_of_task_now.size(),0);
 
+    @AfterClass
+    public void close(){
+        driver.close();
+    }
 
     }
 }
