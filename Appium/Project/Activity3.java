@@ -67,7 +67,10 @@ public class Activity3 {
             //Assert.assertEquals("title","Activity1");
         }
 
-
+    @AfterClass
+    public void close(){
+        driver.quit();
+    }
 
 
 
